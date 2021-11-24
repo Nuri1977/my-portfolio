@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,7 +14,7 @@ body {
 .hamburger {
   width: 33.33px;
   height: 3px;
-  background-color: #FFFFFF;
+  background-color: #fff;
   margin: 6px 0;
 }
 
@@ -21,9 +22,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #FFFFFF;
+  color: #fff;
   height: 50px;
-  padding: 20px 0
+  padding: 20px 0;
 }
 
 .nav-item {
