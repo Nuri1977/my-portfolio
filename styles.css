@@ -11,6 +11,8 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+
+/* Navbar styles */
 .hamburger {
   width: 33.33px;
   height: 3px;
@@ -36,3 +38,38 @@ body {
 a {
   text-decoration: none;
 }
+
+/* Headline styles */
+.headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headline >* {
+  align-self: center;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.headline h1 {
+  font-size: 48px;
+  color: #7d73fc;
+  font-weight: 700;
+}
+
+.headline h2 {
+  font-size: 32px;
+  color: #edecff;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.headline p {
+  font-size: 20px;
+  color: #c8c8d4;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+}
+
