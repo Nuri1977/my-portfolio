@@ -1,6 +1,6 @@
 # My Portfolio
 
-> This is project project for students in Microverse.
+> This is project for students in Microverse.
 
 ![screenshot](./app_screenshot.jpg)
 
