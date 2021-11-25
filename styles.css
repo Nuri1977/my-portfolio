@@ -26,6 +26,20 @@ button {
   font-size: 15px;
 }
 
+/* Geometric shapes */
+#circle {
+  width: 160px;
+  height: 160px;
+  background: #edecff;
+  border-radius: 50%;
+  position: absolute;
+  top: 97px;
+  right: 0;
+  left: -106px;
+  z-index: -1;
+  filter: blur(30px);
+}
+
 /* Header and Navbar styles */
 .header {
   display: flex;
@@ -71,6 +85,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .headline > * {
