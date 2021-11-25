@@ -11,7 +11,37 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* Navbar styles */
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #191765;
+  color: #fff;
+  font-size: 15px;
+}
+
+/* Header and Navbar styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 20px 0;
+}
+
+.logo {
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #191765;
+  color: #fff;
+}
+
 .hamburger {
   width: 33.33px;
   height: 3px;
@@ -21,21 +51,19 @@ body {
 
 .nav-flex {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: space-between;
   color: #fff;
-  height: 50px;
-  padding: 20px 0;
 }
 
-.nav-item {
+.nav-flex button {
+  display: none;
+}
+
+.nav-hamburger {
   padding: 0 10px;
   cursor: pointer;
   font-size: 16px;
-}
-
-a {
-  text-decoration: none;
 }
 
 /* Headline styles */
