@@ -82,10 +82,10 @@ button {
   background: #edecff;
   border-radius: 100px / 50px;
   position: absolute;
-  top: 2600px;
-  left: -93px;
+  top: 3274px;
+  left: -193px;
   z-index: -1;
-  filter: blur(30px);
+  filter: blur(70px);
 }
 
 /* Header and Navbar styles */
