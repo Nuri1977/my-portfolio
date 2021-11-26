@@ -40,6 +40,7 @@ button {
   filter: blur(30px);
 }
 
+
 /* Header and Navbar styles */
 .header {
   display: flex;
@@ -200,4 +201,85 @@ hr {
 .fa-arrow-down {
   padding: 7px 10px;
   color: #acb7c3;
+}
+
+/* Work section */
+.work {
+  padding: 10px 0;
+  margin: 0 25px;
+}
+
+.work-title {
+  font-size: 40px;
+  font-weight: 500;
+  color: #9490ff;
+}
+
+.work hr {
+  margin: 20px 0;
+}
+.work img {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+.card-header {
+  font-size: 32px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 10px 0;
+  line-height: 44px;
+}
+
+.card-paragraph {
+  font-size: 18px;
+  font-weight: 400;
+  color: #dcdce8;
+  margin: 20px 0;
+}
+
+.techs {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.techs > * {
+  padding: 10px 30x;
+  flex: auto;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 20px;
+}
+
+.tech1 {
+  border-right: 1px solid #555555 ;
+}
+
+.tech2 , .tech3 {
+  border-right: 1px solid #555555 ;
+  border-left: 1px solid #555555 ;
+}
+
+.btn-card {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background: #7d73fc;
+  color: #edecff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.btn-card:hover {
+  opacity: 0.9;
 }
