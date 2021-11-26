@@ -269,6 +269,8 @@ hr {
 
 .card {
   margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .card-header {
