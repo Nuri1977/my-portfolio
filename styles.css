@@ -286,6 +286,10 @@ hr {
   margin: 20px 0;
 }
 
+.card ul {
+  list-style: none;
+}
+
 .techs {
   display: flex;
   justify-content: center;
