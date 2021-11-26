@@ -27,7 +27,7 @@ button {
 }
 
 /* Geometric shapes */
-#circle {
+#circle1 {
   width: 160px;
   height: 160px;
   background: #edecff;
@@ -36,6 +36,54 @@ button {
   top: 97px;
   right: 0;
   left: -106px;
+  z-index: -1;
+  filter: blur(30px);
+}
+
+#circle2 {
+  width: 68px;
+  height: 68px;
+  background: #edecff;
+  border-radius: 50%;
+  position: absolute;
+  top: 495px;
+  left: 339px;
+  z-index: -1;
+  filter: blur(30px);
+}
+
+#rectangle1 {
+  width: 39.61px;
+  height: 482.57px;
+  background: #edecff;
+  position: absolute;
+  top: 1624px;
+  left: -11.2px;
+  z-index: -1;
+  filter: blur(25px);
+  transform: rotate(-36.38deg);
+}
+
+#rectangle2 {
+  width: 70px;
+  height: 262px;
+  background: #edecff;
+  position: absolute;
+  top: 2437px;
+  left: 300px;
+  z-index: -1;
+  filter: blur(25px);
+  transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0)
+}
+
+#oval1 {
+  width: 308px;
+  height: 155px;
+  background: r#edecff;
+  border-radius: 100px / 50px;
+  position: absolute;
+  top: 2600px;
+  left: -93px;
   z-index: -1;
   filter: blur(30px);
 }
