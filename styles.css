@@ -73,13 +73,13 @@ button {
   left: 300px;
   z-index: -1;
   filter: blur(25px);
-  transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0)
+  transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
 }
 
 #oval1 {
   width: 308px;
   height: 155px;
-  background: r#edecff;
+  background: #edecff;
   border-radius: 100px / 50px;
   position: absolute;
   top: 2600px;
@@ -87,7 +87,6 @@ button {
   z-index: -1;
   filter: blur(30px);
 }
-
 
 /* Header and Navbar styles */
 .header {
@@ -193,10 +192,6 @@ hr {
   list-style: none;
 }
 
-.languages-iner ul {
-  list-style: none;
-}
-
 .languages-iner ul li {
   font-size: 15px;
   color: #f5f5ff;
@@ -228,12 +223,12 @@ hr {
 
 .social {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .social a {
   padding: 10px 10px;
-  color: #ffffff;
+  color: #fff;
   font-size: 20px;
 }
 
@@ -266,6 +261,7 @@ hr {
 .work hr {
   margin: 20px 0;
 }
+
 .work img {
   width: 100%;
   margin: 10px 0;
@@ -278,7 +274,7 @@ hr {
 .card-header {
   font-size: 32px;
   font-weight: 500;
-  color: #ffffff;
+  color: #fff;
   margin: 10px 0;
   line-height: 44px;
 }
@@ -297,22 +293,22 @@ hr {
 }
 
 .techs > * {
-  padding: 10px 30x;
+  padding: 10px 10px;
   flex: auto;
   text-align: center;
   font-size: 15px;
   font-weight: 500;
-  color: #ffffff;
+  color: #fff;
   line-height: 20px;
 }
 
 .tech1 {
-  border-right: 1px solid #555555 ;
+  border-right: 1px solid #555 ;
 }
 
-.tech2 , .tech3 {
-  border-right: 1px solid #555555 ;
-  border-left: 1px solid #555555 ;
+.tech2 ,.tech3 {
+  border-right: 1px solid #555 ;
+  border-left: 1px solid #555 ;
 }
 
 .btn-card {
