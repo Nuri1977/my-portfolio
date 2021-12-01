@@ -458,9 +458,8 @@ hr {
   }
   
   /* HEADLINE AND LANGUAGES*/
-
   .headline {
-    margin-top: 110px;
+    margin: 110px 0 30px 0;
   }
   .headline h1 {
     font-size: 90px;
@@ -483,6 +482,7 @@ hr {
   .languages {
     display: flex;
     justify-content: center;
+    margin: 20px 0;
   }
   .languages-iner {
     max-width: 447px;
@@ -500,4 +500,12 @@ hr {
     font-size: 13px;
     line-height: 25px;
   }
+
+  /* HEADLINE AND LANGUAGES*/
+  .divider1 hr {
+    max-width: 447px;
+    margin: auto;
+
+  }
+
 }
