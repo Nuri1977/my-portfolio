@@ -285,7 +285,7 @@ hr {
 
 .work img {
   width: 100%;
-  margin: 10px 0;
+  height: 100%;
 }
 
 .card {
@@ -298,8 +298,9 @@ hr {
   font-size: 32px;
   font-weight: 500;
   color: #fff;
-  margin: 10px 0;
+  margin: 24px 0 4px 0;
   line-height: 44px;
+  padding: 30px 0;
 }
 
 .card-paragraph {
@@ -521,6 +522,65 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 100px 0 200px 0;
+    margin: 100px 0 220px 0;
+  }
+
+  /* Work section */
+  .work-title {
+    font-size: 64px;
+    line-height: 114px;
+    font-weight: 700;
+    margin-bottom: 13px;
+  }
+
+  .card {
+    display: flex;
+    grid-gap: 24px;
+    margin: 76px 0 0 0;
+    max-height: 450px;
+  }
+
+  .card-image {
+    flex: 60%;
+  }
+
+  .card-text {
+    padding: 40px 0 0 0;
+    flex: 40%;
+  }
+
+  .card-header {
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card-paragraph {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+
+  .card img {
+    margin: 0;
+  }
+
+  .techs {
+    justify-content: flex-start;
+    margin: 24px 0;
+  }
+   
+  .btn-card {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  .card-reverse {
+    flex-direction: row-reverse;
   }
 }
