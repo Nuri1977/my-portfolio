@@ -263,6 +263,10 @@ hr {
   color: #acb7c3;
 }
 
+.icon-hide {
+  display: none;
+}
+
 /* Work section */
 .work {
   padding: 10px 0;
@@ -487,6 +491,7 @@ hr {
   .languages-iner {
     max-width: 447px;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
     padding: 5px;
   }
 
@@ -501,11 +506,21 @@ hr {
     line-height: 25px;
   }
 
-  /* HEADLINE AND LANGUAGES*/
+  /* Dividers */
   .divider1 hr {
     max-width: 447px;
     margin: auto;
-
   }
 
+  /* Social links */
+  .icon-hide {
+    display: block;
+  }
+
+  .icons-iner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 100px 0 200px 0;
+  }
 }
