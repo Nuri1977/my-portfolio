@@ -173,6 +173,11 @@ hr {
   padding: 0;
 }
 
+.bottom-divider hr {
+  margin: 40px 0 20px 0;
+}
+
+
 /* section languages */
 .languages {
   padding: 10px 0;
@@ -402,10 +407,6 @@ hr {
 }
 
 /* Bottom navigation */
-.bottom-divider hr {
-  margin: 40px 0 20px 0;
-}
-
 .bottom-nav {
   display: flex;
   flex-direction: column;
@@ -425,5 +426,3 @@ hr {
   padding: 5px;
   margin-top: 5px;
 }
-
-
