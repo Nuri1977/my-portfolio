@@ -403,7 +403,7 @@ hr {
 
 /* Bottom navigation */
 .bottom-divider hr {
-  margin: 0;
+  margin: 40px 0 20px 0;
 }
 
 .bottom-nav {
@@ -422,6 +422,8 @@ hr {
   line-height: 28px;
   color: #ebebff;
   text-align: center;
+  padding: 5px;
+  margin-top: 5px;
 }
 
 
