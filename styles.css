@@ -173,6 +173,10 @@ hr {
   padding: 0;
 }
 
+.bottom-divider hr {
+  margin: 40px 0 20px 0;
+}
+
 /* section languages */
 .languages {
   padding: 10px 0;
@@ -333,4 +337,91 @@ hr {
 
 .btn-card:hover {
   opacity: 0.9;
+}
+
+/* Contact form */
+.contact {
+  margin: 110px 24px 0 24px;
+}
+
+.contact-iner {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  list-style: none;
+}
+
+.contact-title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px;
+  color: #9390ff;
+  text-align: center;
+}
+
+.contact-paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #f5f5ff;
+  text-align: center;
+  margin: 15px 0 30px 0;
+}
+
+.message-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-control {
+  width: 100%;
+  padding: 15px 16px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #191765;
+  margin: 10px;
+}
+
+.button-contact {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: #edecff;
+  background: #7d73fc;
+  padding: 12px;
+  margin: 30px;
+}
+
+.button-contact:hover {
+  opacity: 0.9;
+}
+
+.contact-iner li hr {
+  margin-left: -50px;
+  width: 1200px;
+  margin-top: 21px;
+  margin-bottom: 10px;
+}
+
+/* Bottom navigation */
+.bottom-nav {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 24px 40px 24px;
+}
+
+.bottom-nav ul {
+  list-style: none;
+}
+
+.email-title {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #ebebff;
+  text-align: center;
+  padding: 5px;
+  margin-top: 5px;
 }
