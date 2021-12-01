@@ -11,6 +11,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
 a {
   text-decoration: none;
 }
@@ -120,12 +126,19 @@ button {
 
 .nav-flex button {
   display: none;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px ;
 }
 
 .nav-hamburger {
   padding: 0 10px;
   cursor: pointer;
   font-size: 16px;
+}
+
+.fa-envelope {
+  font-size: 18px;
 }
 
 /* Headline styles */
@@ -424,4 +437,67 @@ hr {
   text-align: center;
   padding: 5px;
   margin-top: 5px;
+}
+
+/* -------------------------------------- */
+/*      RESPONISVE STYLING DESKTOP        */
+/* -------------------------------------- */
+
+@media only screen and (min-width: 792px) {
+  /* NAVBAR */
+  .header {
+    margin-top: 6px;
+  }
+
+  .nav-flex button {
+    display: block;
+  }
+
+  .nav-hamburger {
+    display: none;
+  }
+  
+  /* HEADLINE AND LANGUAGES*/
+
+  .headline {
+    margin-top: 110px;
+  }
+  .headline h1 {
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 105px;
+  }
+
+  .headline h2 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 47px;
+  }
+
+  .headline p {
+    max-width: 447px;
+    line-height: 32px;
+    margin-top: 80px;
+  }
+
+  .languages {
+    display: flex;
+    justify-content: center;
+  }
+  .languages-iner {
+    max-width: 447px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5px;
+  }
+
+  .languages-iner ul li h3 {
+    font-size: 18px;
+    line-height: 29.33px;
+    font-weight: 700;
+  }
+
+  .languages-iner ul li {
+    font-size: 13px;
+    line-height: 25px;
+  }
 }
