@@ -14,7 +14,6 @@ body {
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  overflow: auto;
 }
 
 a {
@@ -40,7 +39,6 @@ button {
   border-radius: 50%;
   position: absolute;
   top: 97px;
-  right: 0;
   left: -106px;
   z-index: -1;
   filter: blur(30px);
@@ -53,7 +51,7 @@ button {
   border-radius: 50%;
   position: absolute;
   top: 495px;
-  right: 0;
+  right: 68px;
   z-index: -1;
   filter: blur(30px);
 }
@@ -76,7 +74,7 @@ button {
   background: #edecff;
   position: absolute;
   top: 2437px;
-  right: 70px;
+  right: 100px;
   z-index: -1;
   filter: blur(30px);
   transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
@@ -94,14 +92,15 @@ button {
   filter: blur(30px);
 }
 
+
 #oval4 {
   width: 101px;
-  height: 377px;
+  height: 180px;
   background: #edecff;
-  border-radius: 50.5px / 188.5px;
+  border-radius: 50.5px / 190px;
   position: absolute;
   top: 4023px;
-  left: 258px;
+  right: 70px;
   z-index: -1;
   filter: blur(30px);
   transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
@@ -664,6 +663,7 @@ hr {
   }
 
   /* Geometric shapes - DESKTOP */
+
   #circle1 {
     width: 184px;
     height: 184px;
@@ -736,4 +736,5 @@ hr {
     filter: blur(50px);
     transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
   }
+
 }
