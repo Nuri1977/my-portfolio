@@ -11,6 +11,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
 a {
   text-decoration: none;
 }
@@ -34,7 +39,6 @@ button {
   border-radius: 50%;
   position: absolute;
   top: 97px;
-  right: 0;
   left: -106px;
   z-index: -1;
   filter: blur(30px);
@@ -47,12 +51,12 @@ button {
   border-radius: 50%;
   position: absolute;
   top: 495px;
-  left: 339px;
+  right: 68px;
   z-index: -1;
   filter: blur(30px);
 }
 
-#rectangle1 {
+#oval1 {
   width: 39.61px;
   height: 482.57px;
   background: #edecff;
@@ -60,23 +64,23 @@ button {
   top: 1624px;
   left: -11.2px;
   z-index: -1;
-  filter: blur(25px);
+  filter: blur(30px);
   transform: rotate(-36.38deg);
 }
 
-#rectangle2 {
+#oval2 {
   width: 70px;
-  height: 262px;
+  height: 200px;
   background: #edecff;
   position: absolute;
   top: 2437px;
-  left: 300px;
+  right: 100px;
   z-index: -1;
-  filter: blur(25px);
+  filter: blur(30px);
   transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
 }
 
-#oval1 {
+#oval3 {
   width: 308px;
   height: 155px;
   background: #edecff;
@@ -85,7 +89,20 @@ button {
   top: 3274px;
   left: -193px;
   z-index: -1;
-  filter: blur(70px);
+  filter: blur(30px);
+}
+
+#oval4 {
+  width: 101px;
+  height: 180px;
+  background: #edecff;
+  border-radius: 50.5px / 190px;
+  position: absolute;
+  top: 4023px;
+  right: 70px;
+  z-index: -1;
+  filter: blur(30px);
+  transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
 }
 
 /* Header and Navbar styles */
@@ -120,12 +137,19 @@ button {
 
 .nav-flex button {
   display: none;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
 }
 
 .nav-hamburger {
   padding: 0 10px;
   cursor: pointer;
   font-size: 16px;
+}
+
+.fa-envelope {
+  font-size: 18px;
 }
 
 /* Headline styles */
@@ -250,6 +274,10 @@ hr {
   color: #acb7c3;
 }
 
+.icon-hide {
+  display: none;
+}
+
 /* Work section */
 .work {
   padding: 10px 0;
@@ -268,7 +296,7 @@ hr {
 
 .work img {
   width: 100%;
-  margin: 10px 0;
+  height: 100%;
 }
 
 .card {
@@ -281,8 +309,9 @@ hr {
   font-size: 32px;
   font-weight: 500;
   color: #fff;
-  margin: 10px 0;
+  margin: 24px 0 4px 0;
   line-height: 44px;
+  padding: 30px 0;
 }
 
 .card-paragraph {
@@ -424,4 +453,286 @@ hr {
   text-align: center;
   padding: 5px;
   margin-top: 5px;
+}
+
+/* -------------------------------------- */
+
+/*      RESPONISVE STYLING DESKTOP        */
+
+/* -------------------------------------- */
+
+@media only screen and (min-width: 992px) {
+  /* NAVBAR  - DESKTOP */
+  .header {
+    margin-top: 6px;
+  }
+
+  .nav-flex button {
+    display: block;
+  }
+
+  .nav-hamburger {
+    display: none;
+  }
+
+  /* HEADLINE AND LANGUAGES  - DESKTOP */
+  .headline {
+    margin: 110px 0 30px 0;
+  }
+
+  .headline h1 {
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 105px;
+  }
+
+  .headline h2 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 47px;
+  }
+
+  .headline p {
+    max-width: 447px;
+    line-height: 32px;
+    margin-top: 80px;
+  }
+
+  .languages {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .languages-iner {
+    max-width: 447px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    padding: 5px;
+  }
+
+  .languages-iner ul li h3 {
+    font-size: 18px;
+    line-height: 29.33px;
+    font-weight: 700;
+  }
+
+  .languages-iner ul li {
+    font-size: 13px;
+    line-height: 25px;
+  }
+
+  /* Dividers - DESKTOP */
+  .divider1 hr {
+    max-width: 447px;
+    margin: auto;
+  }
+
+  /* Social links  - DESKTOP */
+  .icon-hide {
+    display: block;
+  }
+
+  .icons-iner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 100px 0 220px 0;
+  }
+
+  /* Work section  - DESKTOP */
+  .work-title {
+    font-size: 64px;
+    line-height: 114px;
+    font-weight: 700;
+    margin-bottom: 13px;
+  }
+
+  .card {
+    display: flex;
+    grid-gap: 24px;
+    margin: 76px 0 0 0;
+    max-height: 450px;
+  }
+
+  .card-image {
+    flex: 60%;
+  }
+
+  .card-text {
+    padding: 40px 0 0 0;
+    flex: 40%;
+  }
+
+  .card-header {
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card-paragraph {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+
+  .card img {
+    margin: 0;
+  }
+
+  .techs {
+    justify-content: flex-start;
+    margin: 24px 0;
+  }
+
+  .btn-card {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  .card-reverse {
+    flex-direction: row-reverse;
+  }
+
+  /* Contact form - DESKTOP */
+  .contact-iner {
+    max-width: 684px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  .message-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .input1,
+  .input2 {
+    flex: 40%;
+    max-width: 330px;
+    font-size: 17px;
+    line-height: 20px;
+    padding: 14px 15px;
+  }
+
+  .input3,
+  .input4 {
+    flex: 100%;
+  }
+
+  .input5 {
+    align-self: center;
+    font-size: 15px;
+    line-height: 24px;
+    width: 136px;
+    margin: 90px 24px 50px 24px;
+  }
+
+  /* Bottom navigation - DESKTOP */
+  .bottom-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 24px 20px 24px;
+  }
+
+  .bottom-nav ul {
+    align-self: center;
+    margin: 0;
+    font-size: 20px;
+    padding: 0 10px;
+  }
+
+  .email-title {
+    align-self: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #ebebff;
+    text-align: center;
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  /* Geometric shapes - DESKTOP */
+
+  #circle1 {
+    width: 184px;
+    height: 184px;
+    border-radius: 50%;
+    position: absolute;
+    top: 237px;
+    left: 69px;
+    z-index: -1;
+    filter: blur(50px);
+  }
+
+  #circle2 {
+    width: 226px;
+    height: 226px;
+    background: #edecff;
+    border-radius: 50%;
+    position: absolute;
+    top: 546px;
+    left: 1143px;
+    z-index: -1;
+    filter: blur(50px);
+  }
+
+  #oval1 {
+    width: 700px;
+    height: 57px;
+    background: #edecff;
+    position: absolute;
+    top: 1479px;
+    left: -132px;
+    z-index: -1;
+    filter: blur(50px);
+    transform: rotate(36.38deg);
+  }
+
+  #oval2 {
+    width: 108px;
+    height: 402px;
+    background: #edecff;
+    border-radius: 54px / 201px;
+    position: absolute;
+    top: 2257px;
+    left: 1113px;
+    z-index: -1;
+    filter: blur(50px);
+    transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
+  }
+
+  #oval3 {
+    width: 308px;
+    height: 155px;
+    background: #edecff;
+    border-radius: 154px / 77.5px;
+    position: absolute;
+    top: 2848px;
+    left: -41px;
+    z-index: -1;
+    filter: blur(50px);
+  }
+
+  #oval4 {
+    width: 246px;
+    height: 916px;
+    background: #edecff;
+    border-radius: 100px / 50px;
+    position: absolute;
+    top: 2934px;
+    left: 1090px;
+    z-index: -1;
+    filter: blur(50px);
+    transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
+  }
 }
