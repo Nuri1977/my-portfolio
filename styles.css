@@ -53,12 +53,12 @@ button {
   border-radius: 50%;
   position: absolute;
   top: 495px;
-  left: 339px;
+  right: 0;
   z-index: -1;
   filter: blur(30px);
 }
 
-#rectangle1 {
+#oval1 {
   width: 39.61px;
   height: 482.57px;
   background: #edecff;
@@ -66,23 +66,23 @@ button {
   top: 1624px;
   left: -11.2px;
   z-index: -1;
-  filter: blur(25px);
+  filter: blur(30px);
   transform: rotate(-36.38deg);
 }
 
-#rectangle2 {
+#oval2 {
   width: 70px;
-  height: 262px;
+  height: 200px;
   background: #edecff;
   position: absolute;
   top: 2437px;
-  left: 300px;
+  right: 70px;
   z-index: -1;
-  filter: blur(25px);
+  filter: blur(30px);
   transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
 }
 
-#oval1 {
+#oval3 {
   width: 308px;
   height: 155px;
   background: #edecff;
@@ -91,7 +91,20 @@ button {
   top: 3274px;
   left: -193px;
   z-index: -1;
-  filter: blur(70px);
+  filter: blur(30px);
+}
+
+#oval4 {
+  width: 101px;
+  height: 377px;
+  background: #edecff;
+  border-radius: 50.5px / 188.5px;
+  position: absolute;
+  top: 4023px;
+  left: 258px;
+  z-index: -1;
+  filter: blur(30px);
+  transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
 }
 
 /* Header and Navbar styles */
@@ -648,5 +661,79 @@ hr {
     text-align: center;
     margin: 0;
     padding: 0 10px;
+  }
+
+  /* Geometric shapes - DESKTOP */
+  #circle1 {
+    width: 184px;
+    height: 184px;
+    border-radius: 50%;
+    position: absolute;
+    top: 237px;
+    left: 69px;
+    z-index: -1;
+    filter: blur(50px);
+  }
+
+  #circle2 {
+    width: 226px;
+    height: 226px;
+    background: #edecff;
+    border-radius: 50%;
+    position: absolute;
+    top: 546px;
+    left: 1143px;
+    z-index: -1;
+    filter: blur(50px);
+  }
+
+  #oval1 {
+    width: 700px;
+    height: 57px;
+    background: #edecff;
+    position: absolute;
+    top: 1479px;
+    left: -132px;
+    z-index: -1;
+    filter: blur(50px);
+    transform: rotate(36.38deg);
+  }
+
+  #oval2 {
+    width: 108px;
+    height: 402px;
+    background: #edecff;
+    border-radius: 54px / 201px;
+    position: absolute;
+    top: 2257px;
+    left: 1113px;
+    z-index: -1;
+    filter: blur(50px);
+    transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
+  }
+
+  #oval3 {
+    width: 308px;
+    height: 155px;
+    background: #edecff;
+    border-radius: 154px / 77.5px;
+    position: absolute;
+    top: 2848px;
+    left: -41px;
+    z-index: -1;
+    filter: blur(50px);
+  }
+
+  #oval4 {
+    width: 246px;
+    height: 916px;
+    background: #edecff;
+    border-radius: 100px / 50px;
+    position: absolute;
+    top: 2934px;
+    left: 1090px;
+    z-index: -1;
+    filter: blur(50px);
+    transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
   }
 }
