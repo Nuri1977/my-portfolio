@@ -620,4 +620,31 @@ hr {
     width: 136px;
     margin: 90px 24px 50px 24px;
   }
+
+  /* Bottom navigation */
+.bottom-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 24px 20px 24px;
+}
+
+.bottom-nav ul {
+  align-self: center;
+  margin: 0;
+  font-size: 20px;
+  padding: 0 10px;
+
+}
+.email-title {
+  align-self: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #ebebff;
+  text-align: center;
+  margin: 0;
+  padding: 0 10px;
+}
 }
