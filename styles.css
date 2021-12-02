@@ -583,4 +583,41 @@ hr {
   .card-reverse {
     flex-direction: row-reverse;
   }
+
+  /* Contact form */
+  .contact-iner {
+    max-width: 684px;
+    margin: 0 auto;
+    order: 1px solid green;
+    flex-wrap: wrap;
+  }
+
+  .message-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .input1,
+  .input2 {
+    flex: 40%;
+    max-width: 330px;
+    padding: 10px;
+    font-size: 17px;
+    align-content: 20px;
+    padding: 14px 15px ;
+  }
+
+  .input3,
+  .input4 {
+    flex: 100%;
+  }
+
+  .input5 {
+    align-self: center;
+    font-size: 15px;
+    line-height: 24px;
+    width: 136px;
+    margin: 90px 24px 50px 24px;
+  }
 }
