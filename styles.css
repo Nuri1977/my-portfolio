@@ -92,7 +92,6 @@ button {
   filter: blur(30px);
 }
 
-
 #oval4 {
   width: 101px;
   height: 180px;
@@ -736,5 +735,4 @@ hr {
     filter: blur(50px);
     transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
   }
-
 }
