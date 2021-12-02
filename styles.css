@@ -128,7 +128,7 @@ button {
   display: none;
   font-size: 15px;
   font-weight: 500;
-  line-height: 20px ;
+  line-height: 20px;
 }
 
 .nav-hamburger {
@@ -445,11 +445,13 @@ hr {
 }
 
 /* -------------------------------------- */
+
 /*      RESPONISVE STYLING DESKTOP        */
+
 /* -------------------------------------- */
 
 @media only screen and (min-width: 792px) {
-  /* NAVBAR */
+  /* NAVBAR  - DESKTOP */
   .header {
     margin-top: 6px;
   }
@@ -461,11 +463,12 @@ hr {
   .nav-hamburger {
     display: none;
   }
-  
-  /* HEADLINE AND LANGUAGES*/
+
+  /* HEADLINE AND LANGUAGES  - DESKTOP */
   .headline {
     margin: 110px 0 30px 0;
   }
+
   .headline h1 {
     font-size: 90px;
     font-weight: 700;
@@ -489,6 +492,7 @@ hr {
     justify-content: center;
     margin: 20px 0;
   }
+
   .languages-iner {
     max-width: 447px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -507,13 +511,13 @@ hr {
     line-height: 25px;
   }
 
-  /* Dividers */
+  /* Dividers - DESKTOP */
   .divider1 hr {
     max-width: 447px;
     margin: auto;
   }
 
-  /* Social links */
+  /* Social links  - DESKTOP */
   .icon-hide {
     display: block;
   }
@@ -525,7 +529,7 @@ hr {
     margin: 100px 0 220px 0;
   }
 
-  /* Work section */
+  /* Work section  - DESKTOP */
   .work-title {
     font-size: 64px;
     line-height: 114px;
@@ -571,7 +575,7 @@ hr {
     justify-content: flex-start;
     margin: 24px 0;
   }
-   
+
   .btn-card {
     padding: 10px 20px;
     font-size: 15px;
@@ -584,11 +588,10 @@ hr {
     flex-direction: row-reverse;
   }
 
-  /* Contact form */
+  /* Contact form - DESKTOP */
   .contact-iner {
     max-width: 684px;
     margin: 0 auto;
-    order: 1px solid green;
     flex-wrap: wrap;
   }
 
@@ -602,10 +605,9 @@ hr {
   .input2 {
     flex: 40%;
     max-width: 330px;
-    padding: 10px;
     font-size: 17px;
-    align-content: 20px;
-    padding: 14px 15px ;
+    line-height: 20px;
+    padding: 14px 15px;
   }
 
   .input3,
@@ -621,30 +623,30 @@ hr {
     margin: 90px 24px 50px 24px;
   }
 
-  /* Bottom navigation */
-.bottom-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 15px 24px 20px 24px;
-}
+  /* Bottom navigation - DESKTOP */
+  .bottom-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 24px 20px 24px;
+  }
 
-.bottom-nav ul {
-  align-self: center;
-  margin: 0;
-  font-size: 20px;
-  padding: 0 10px;
+  .bottom-nav ul {
+    align-self: center;
+    margin: 0;
+    font-size: 20px;
+    padding: 0 10px;
+  }
 
-}
-.email-title {
-  align-self: center;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28px;
-  color: #ebebff;
-  text-align: center;
-  margin: 0;
-  padding: 0 10px;
-}
+  .email-title {
+    align-self: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #ebebff;
+    text-align: center;
+    margin: 0;
+    padding: 0 10px;
+  }
 }
