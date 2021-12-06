@@ -12,13 +12,13 @@
 
 ## Live Demo
 
-[Live Demo Link](https://nuri1977.github.io/my-portfolio/)
+-View [Live Demo Link](https://nuri1977.github.io/my-portfolio/)
 
 👤 **Author**
 
-- GitHub: [@githubhandle](https://github.com/Nuri1977)
-- Twitter: [@twitterhandle](https://twitter.com/LackaNuri)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/nuri-lacka-7141b01ba/)
+- GitHub: [@Nuri1977](https://github.com/Nuri1977)
+- Twitter: [@Lackanuri](https://twitter.com/LackaNuri)
+- LinkedIn: [@nurilacka](https://www.linkedin.com/in/nuri-lacka-7141b01ba/)
 
 
 ## Show your support
