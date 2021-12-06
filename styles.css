@@ -681,7 +681,7 @@ hr {
     border-radius: 50%;
     position: absolute;
     top: 546px;
-    left: 1143px;
+    right: 116px;
     z-index: -1;
     filter: blur(50px);
   }
@@ -705,7 +705,7 @@ hr {
     border-radius: 54px / 201px;
     position: absolute;
     top: 2257px;
-    left: 1113px;
+    right: 150px;
     z-index: -1;
     filter: blur(50px);
     transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
@@ -725,12 +725,12 @@ hr {
 
   #oval4 {
     width: 246px;
-    height: 916px;
+    height: 500px;
     background: #edecff;
     border-radius: 100px / 50px;
     position: absolute;
     top: 2934px;
-    left: 1090px;
+    right: 160px;
     z-index: -1;
     filter: blur(50px);
     transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
