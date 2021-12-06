@@ -2,7 +2,7 @@
 
 > This is project for students in Microverse.
 
-![screenshot](./app_screenshot.jpg)
+![screenshot](./my_app.png)
 
 ## Built With
 
