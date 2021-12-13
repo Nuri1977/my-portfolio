@@ -18,30 +18,31 @@
   </script>
 </head>
 <body>
-  <div class="circle1"></div>
-  <div class="circle2"></div>
+  <div class="circle1 show"></div>
+  <div class="circle2 show"></div>
   <div class="oval1"></div>
   <div class="oval2"></div>
   <div class="oval3"></div>
   <div class="oval4"></div>
   <div class="container">
       <!-- HEADER AND NAVBAR SECTION  -->
-    <header class="header">
-      <a href="#" class="logo">John Do</a>
-      <nav class="nav-flex">
-        <button type="button">Portfolio</button>
-        <button type="button">Contact</button>
-        <button type="button">About</button>
-        <button type="button"><i class="far fa-envelope"></i></button>
-        <div class="nav-hamburger">
-          <div class="hamburger"></div>
-          <div class="hamburger"></div>
-          <div class="hamburger"></div>
-        </div>
+    <header id="header" class="header">
+      <a href="#" id="logo" class="logo">My Logo</a>
+      <nav id="nav-flex" class="nav-flex">
+        <a class="left-icon"><i class="fas fa-times hide"></i></a>
+        <a href="#portfolio" class="nav-portfolio">Portfolio<i class="fas fa-chevron-right"></i></a>
+        <a href="#contact" class="nav-contact">Contact<i class="fas fa-chevron-right"></i></a>
+        <a href="#about" class="nav-about">About<i class="fas fa-chevron-right"></i></a>
+        <a href="#email"><i class="far fa-envelope show"></i></a>
       </nav>
+      <div id="hamburger" class="nav-hamburger">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+      </div>
     </header>
     <!-- HEADLINE SECTION  -->
-    <section class="headline">
+    <section id="about" class="headline">
       <h1>Nuri Lacka</h1>
       <h2>Software Developer</h2>
       <p>
@@ -101,13 +102,13 @@
       </div>
     </section>
     <!-- WORK SECTION  -->
-    <section class="work">
+    <section id="portfolio" class="work">
       <div class="work-iner">
         <h1 class="work-title">My recent work</h1>
         <hr/>
         <div class="card">
           <div class="card-image">
-            <img src="app_sceenshot.jpg" alt="mypage" />
+            <img src="images/app_sceenshot.jpg" alt="mypage" />
           </div>
           <div class="card-text">
             <h3 class="card-header">Multi-Post stories</h3>
@@ -127,7 +128,7 @@
         </div>
         <div class="card card-reverse">
           <div class="card-image">
-            <img src="app_sceenshot.jpg" alt="mypage" />
+            <img src="images/app_sceenshot.jpg" alt="mypage" />
           </div>
           <div class="card-text">
             <h3 class="card-header">Multi-Post stories</h3>
@@ -147,7 +148,7 @@
         </div>
         <div class="card">
           <div class="card-image">
-            <img src="app_sceenshot.jpg" alt="mypage" />
+            <img src="images/app_sceenshot.jpg" alt="mypage" />
           </div>
           <div class="card-text">
             <h3 class="card-header">Multi-Post stories</h3>
@@ -167,7 +168,7 @@
         </div>
         <div class="card card-reverse">
           <div class="card-image">
-            <img src="app_sceenshot.jpg" alt="mypage" />
+            <img src="images/app_sceenshot.jpg" alt="mypage" />
           </div>
           <div class="card-text">
             <h3 class="card-header">Multi-Post stories</h3>
@@ -188,7 +189,7 @@
       </div>
     </section>
     <!-- CONTACT SECTION  -->
-    <section class="contact">
+    <section id="contact" class="contact">
       <ul class="contact-iner">
         <li>
           <h2 class="contact-title">Let's chat!</h2>
@@ -221,8 +222,12 @@
         <li><a href="#" ><i class="fab fa-twitter"></i></a></li>
         <li><a href="#" ><i class="fab fa-medium-m"></i></a></li>
       </ul>
-      <h3 class="email-title">nurilacka@gmail.com</h3>
+      <h3 id="email" class="email-title">nurilacka@gmail.com</h3>
     </footer>
   </div>
+
+  <script src="main.js">
+    
+  </script>
 </body>
 </html>

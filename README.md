@@ -2,12 +2,13 @@
 
 > This is project for students in Microverse.
 
-![screenshot](./my_app.png)
+![screenshot](./images/my_app.png)
 
 ## Built With
 
 - HTML
 - CSS
+- Javascript
 - Github Actions
 
 ## Live Demo

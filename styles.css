@@ -17,10 +17,6 @@ body {
 }
 
 a {
-  text-decoration: none;
-}
-
-button {
   cursor: pointer;
   display: inline-block;
   border: 0;
@@ -29,6 +25,7 @@ button {
   background: #191765;
   color: #fff;
   font-size: 15px;
+  text-decoration: none;
 }
 
 /* Geometric shapes */
@@ -111,12 +108,62 @@ button {
   justify-content: space-between;
   align-items: center;
   height: 50px;
-  padding: 20px 0;
+  padding: 20px 24px;
+}
+
+.header1 {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background-image: url('./images/oval5.png'), url('./images/oval6.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position-x: left, right;
+  background-position-y: 42px, 318px;
+  background-size: 226px 427px, 244px 420px;
+  z-index: 99;
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #fff;
+}
+
+.nav-flex1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.nav-flex a {
+  display: none;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.nav-flex1 a {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  padding: 10px 40px;
+  background: transparent;
+}
+
+.nav-flex1 .left-icon {
+  justify-content: flex-end;
 }
 
 .logo {
   font-weight: 500;
-  padding: 10px 20px;
+  padding: 10px 0;
   background: #191765;
   color: #fff;
 }
@@ -128,28 +175,31 @@ button {
   margin: 6px 0;
 }
 
-.nav-flex {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  color: #fff;
-}
-
-.nav-flex button {
-  display: none;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 20px;
-}
-
 .nav-hamburger {
-  padding: 0 10px;
   cursor: pointer;
   font-size: 16px;
 }
 
 .fa-envelope {
   font-size: 18px;
+}
+
+.fa-chevron-right {
+  font-size: 18px;
+  color: #acb7c3;
+}
+
+.fa-times {
+  font-size: 20px;
+  line-height: 34px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 /* Headline styles */
@@ -170,6 +220,7 @@ button {
   font-size: 48px;
   color: #7d73fc;
   font-weight: 700;
+  background: transparent;
 }
 
 .headline h2 {
@@ -467,11 +518,15 @@ hr {
     margin-top: 6px;
   }
 
-  .nav-flex button {
+  .nav-flex a {
     display: block;
   }
 
   .nav-hamburger {
+    display: none;
+  }
+
+  .fa-chevron-right {
     display: none;
   }
 
