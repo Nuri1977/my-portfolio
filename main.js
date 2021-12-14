@@ -58,46 +58,93 @@ navAbout.addEventListener('click', () => {
 });
 
 /* -------------------------------------------------- */
-/*                  MODAL WINDOW                      */ 
+/*                  DATABASE                     */
 /* -------------------------------------------------- */
-const projects = [ 
+const projects = [
   {
     id: 1,
-    name: "Figma project 1",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque dolorum excepturi tempora suscipit velit asperiores est explicabo non cumque reprehenderit consectetur ut, minus nihil sed incidunt possimus quas deleniti maiores, tempore magnam rerum nulla fugiat. Aliquid sint reiciendis distinctio repudiandae debitis ipsam reprehenderit quidem ipsum dolores, architecto eius laudantium vitae.",
-    imageUrl: "/images/Portfolio1.png",
+    name: 'Figma project 1',
+    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque dolorum excepturi tempora suscipit velit asperiores est explicabo non cumque reprehenderit consectetur ut, minus nihil sed incidunt possimus quas deleniti maiores, tempore magnam rerum nulla fugiat.',
+    imageUrl: '/images/app_sceenshot.jpg',
     technologies: ["html", "Ruby on rails", "Javascript"],
-    liveLink: "http://nuri1977.github.io/bootsrap5-figma-01/",
-    sourceLink: "https://github.com/Nuri1977/bootsrap5-figma-01"
+    liveLink: 'http://nuri1977.github.io/bootsrap5-figma-01/',
+    sourceLink: 'https://github.com/Nuri1977/bootsrap5-figma-01'
   },
   {
     id: 2,
-    name: "Project name2",
-    description: "Project description2",
-    imageUrl: "/images/app_screenshot.jpg",
+    name: 'Figma project 2',
+    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque dolorum excepturi tempora suscipit velit asperiores est explicabo non cumque reprehenderit consectetur ut, minus nihil sed incidunt possimus quas deleniti maiores, tempore magnam rerum nulla fugiat.',
+    imageUrl: '/images/app_sceenshot.jpg',
     technologies: ["html", "Ruby on rails", "Javascript"],
-    liveLink: "livelink2",
-    sourceLink: "sourcelink2"
+    liveLink: 'livelink2',
+    sourceLink: 'sourcelink2'
   },
   {
     id: 3,
-    name: "Project name3",
-    description: "Project description3",
-    imageUrl: "/images/app_screenshot.jpg",
+    name: 'Figma project 3',
+    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque dolorum excepturi tempora suscipit velit asperiores est explicabo non cumque reprehenderit consectetur ut, minus nihil sed incidunt possimus quas deleniti maiores, tempore magnam rerum nulla fugiat.',
+    imageUrl: '/images/app_sceenshot.jpg',
     technologies: ["html", "Ruby on rails", "Javascript"],
-    liveLink: "livelink3",
-    sourceLink: "sourcelink3"
+    liveLink: 'livelink3',
+    sourceLink: 'sourcelink3'
   },
   {
     id: 4,
-    name: "Project name4",
-    description: "Project description4",
-    imageUrl: "/images/app_screenshot.jpg",
+    name: 'Figma project 4',
+    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque dolorum excepturi tempora suscipit velit asperiores est explicabo non cumque reprehenderit consectetur ut, minus nihil sed incidunt possimus quas deleniti maiores, tempore magnam rerum nulla fugiat.',
+    imageUrl: '/images/app_sceenshot.jpg',
     technologies: ["html", "Ruby on rails", "Javascript"],
-    liveLink: "livelink4",
-    sourceLink: "sourcelink4"
+    liveLink: 'livelink4',
+    sourceLink: 'sourcelink4'
   }
-]
+];
+
+/* -------------------------------------------------- */
+/*                 RENDERING CARDS                    */
+/* -------------------------------------------------- */
+
+const cardContent = document.querySelector('#cards-render');
+let cardObject = {};
+
+const rendeCards = () => {
+  for (let i = 0; i < projects.length; i += 1) {
+    cardObject = projects[i];
+    let btnModal = '';
+    let cardReverse = '';
+    if (cardObject.id === 2 || cardObject.id === 4) cardReverse = 'card-reverse';
+    btnModal = 'btnP' + cardObject.id;
+    const content = `
+      <div class="card  ${cardReverse}">
+        <div class="card-image">
+          <img src="${cardObject.imageUrl}" alt="mypage" />
+        </div>
+        <div class="card-text">
+          <h3 class="card-header">${cardObject.name}</h3>
+          <p class="card-paragraph">
+            ${cardObject.description}
+          </p>
+          <ul class="techs">
+            <li class="tech1">${cardObject.technologies[0]}</li>
+            <li class="tech2">${cardObject.technologies[1]}</li>
+            <li class="tech3">${cardObject.technologies[2]}</li>
+          </ul>
+          <div>
+            <button type="button" class="btn-card  ${btnModal}" value=${cardObject.id} >See Project</button>
+          </div>
+        </div>
+      </div>
+    `;
+
+    cardContent.innerHTML += content;
+  }
+
+};
+
+rendeCards();
+
+/* -------------------------------------------------- */
+/*                  MODAL WINDOW                      */
+/* -------------------------------------------------- */
 
 const projectBtn1 = document.querySelector('.btnP1');
 const projectBtn2 = document.querySelector('.btnP2');
@@ -116,9 +163,9 @@ const modalSource = document.querySelector('.modal-source');
 let modalProject = {};
 
 const fetchData = (event) => {
-  for (let i = 0; i < projects.length; i++) {
-    if(event.target.value == projects[i].id) {
-      modalProject = projects[i]
+  for (let i = 0; i < projects.length; i = i+1) {
+    if (event.target.value == projects[i].id) {
+      modalProject = projects[i];
     }
   }
   modalTitle.innerHTML = modalProject.name;
@@ -129,14 +176,14 @@ const fetchData = (event) => {
   modalTech3.innerHTML = modalProject.technologies[2];
   modalLive.href = modalProject.liveLink;
   modalSource.href = modalProject.sourceLink;
-  
+
   modalContainer.classList.replace('hide', 'show');
-}
+};
 
 projectBtn1.addEventListener('click', fetchData);
 projectBtn2.addEventListener('click', fetchData);
 projectBtn3.addEventListener('click', fetchData);
 projectBtn4.addEventListener('click', fetchData);
 
-modalClose.addEventListener('click', () => modalContainer.classList.replace('show', 'hide'))
+modalClose.addEventListener('click', () => modalContainer.classList.replace('show', 'hide'));
 
