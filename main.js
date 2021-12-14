@@ -56,3 +56,22 @@ navAbout.addEventListener('click', () => {
     closeDrop();
   }
 });
+
+/* ------------------------------------------------- */
+/*                  MODAL WINDOW                    */ 
+const cardBtn = document.querySelector('#header');
+
+const projects = [ 
+  {
+    id: 1,
+    project: {
+      name: "Project name",
+      description: "Project description",
+      imageUrl: "/images/app_screenshot.jpg",
+      technologies: ["html", "Ruby on rails", "Javascript"],
+      liveLink: "livelink1",
+      sourceLink: "sourcelink1"
+    }
+  }
+]
+
