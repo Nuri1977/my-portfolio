@@ -507,6 +507,7 @@ hr {
 }
 
 /* MODAL mobile */
+
 .modal-container {
   position: fixed;
   top: 0;
@@ -556,8 +557,8 @@ hr {
 color: #fff;
 font-style: normal;
 font-weight: normal;
-font-size: 16px;
-line-height: 24px;
+font-size: 12px;
+line-height: 18px;
 text-align: center;
 margin: 24px 0px;
 }
@@ -574,7 +575,7 @@ margin: 24px 0px;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  padding: 15px;
+  padding: 10px;
   border-right: 1px solid #81818c;
 }
 
