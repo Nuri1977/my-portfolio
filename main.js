@@ -66,7 +66,7 @@ const projects = [
     name: 'Figma project 1',
     description:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque dolorum excepturi tempora suscipit velit asperiores est explicabo non cumque reprehenderit consectetur ut, minus nihil sed incidunt possimus quas deleniti maiores, tempore magnam rerum nulla fugiat.',
-    imageUrl: '/images/app_sceenshot.jpg',
+    imageUrl: 'images/app_sceenshot.jpg',
     technologies: ['html', 'Ruby on rails', 'Javascript'],
     liveLink: 'http://nuri1977.github.io/bootsrap5-figma-01/',
     sourceLink: 'https://github.com/Nuri1977/bootsrap5-figma-01',
@@ -76,7 +76,7 @@ const projects = [
     name: 'Figma project 2',
     description:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque dolorum excepturi tempora suscipit velit asperiores est explicabo non cumque reprehenderit consectetur ut, minus nihil sed incidunt possimus quas deleniti maiores, tempore magnam rerum nulla fugiat.',
-    imageUrl: '/images/app_sceenshot.jpg',
+    imageUrl: 'images/app_sceenshot.jpg',
     technologies: ['html', 'Ruby on rails', 'Javascript'],
     liveLink: 'livelink2',
     sourceLink: 'sourcelink2',
@@ -86,7 +86,7 @@ const projects = [
     name: 'Figma project 3',
     description:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque dolorum excepturi tempora suscipit velit asperiores est explicabo non cumque reprehenderit consectetur ut, minus nihil sed incidunt possimus quas deleniti maiores, tempore magnam rerum nulla fugiat.',
-    imageUrl: '/images/app_sceenshot.jpg',
+    imageUrl: 'images/app_sceenshot.jpg',
     technologies: ['html', 'Ruby on rails', 'Javascript'],
     liveLink: 'livelink3',
     sourceLink: 'sourcelink3',
@@ -96,7 +96,7 @@ const projects = [
     name: 'Figma project 4',
     description:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque dolorum excepturi tempora suscipit velit asperiores est explicabo non cumque reprehenderit consectetur ut, minus nihil sed incidunt possimus quas deleniti maiores, tempore magnam rerum nulla fugiat.',
-    imageUrl: '/images/app_sceenshot.jpg',
+    imageUrl: 'images/app_sceenshot.jpg',
     technologies: ['html', 'Ruby on rails', 'Javascript'],
     liveLink: 'livelink4',
     sourceLink: 'sourcelink4',
