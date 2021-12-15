@@ -115,9 +115,8 @@ const rendeCards = () => {
     cardObject = projects[i];
     let btnModal = '';
     let cardReverse = '';
-    if (cardObject.id === 2 || cardObject.id === 4)
-      cardReverse = 'card-reverse';
-    btnModal = 'btnP' + cardObject.id;
+    if (cardObject.id === 2 || cardObject.id === 4) cardReverse = 'card-reverse';
+    btnModal = `btnP${cardObject.id}`;
     const content = `
       <div class="card  ${cardReverse}">
         <div class="card-image">
@@ -159,25 +158,28 @@ const modalTitle = document.querySelector('.modal-title');
 const modalClose = document.querySelector('.modal-btn-close');
 const modalImg = document.querySelector('.modal-img');
 const modalPargraph = document.querySelector('.modal-paragraph');
-const modalTech1 = document.querySelector('.modal-tech1');
-const modalTech2 = document.querySelector('.modal-tech2');
-const modalTech3 = document.querySelector('.modal-tech3');
+const modalTechs = document.querySelector('.modal-techs');
 const modalLive = document.querySelector('.modal-live');
 const modalSource = document.querySelector('.modal-source');
 let modalProject = {};
 
 const fetchData = (event) => {
-  for (let i = 0; i < projects.length; i = i + 1) {
-    if (event.target.value == projects[i].id) {
+  for (let i = 0; i < projects.length; i += 1) {
+    if (+event.target.value === projects[i].id) {
       modalProject = projects[i];
     }
   }
   modalTitle.innerHTML = modalProject.name;
   modalPargraph.innerHTML = modalProject.description;
   modalImg.src = modalProject.imageUrl;
-  modalTech1.innerHTML = modalProject.technologies[0];
-  modalTech2.innerHTML = modalProject.technologies[1];
-  modalTech3.innerHTML = modalProject.technologies[2];
+  const techs = modalProject.technologies;
+  modalTechs.innerHTML = '';
+  for (let i = 0; i < techs.length; i += 1) {
+    const techsClass = toString(i + 1);
+    const newtechs = `<li class="modal-tech${techsClass}">${techs[i]}</li>`;
+    modalTechs.innerHTML += newtechs;
+  }
+
   modalLive.href = modalProject.liveLink;
   modalSource.href = modalProject.sourceLink;
 
@@ -189,6 +191,4 @@ projectBtn2.addEventListener('click', fetchData);
 projectBtn3.addEventListener('click', fetchData);
 projectBtn4.addEventListener('click', fetchData);
 
-modalClose.addEventListener('click', () =>
-  modalContainer.classList.replace('show', 'hide')
-);
+modalClose.addEventListener('click', () => modalContainer.classList.replace('show', 'hide'));
