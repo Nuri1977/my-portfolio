@@ -345,7 +345,7 @@ hr {
   margin: 20px 0;
 }
 
-.work img {
+.card-image img {
   width: 100%;
   height: 100%;
 }
@@ -416,7 +416,7 @@ hr {
 }
 
 .btn-card:hover {
-  opacity: 0.9;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
 
 /* Contact form */
@@ -475,7 +475,7 @@ hr {
 }
 
 .button-contact:hover {
-  opacity: 0.9;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
 
 .contact-iner li hr {
@@ -504,6 +504,116 @@ hr {
   text-align: center;
   padding: 5px;
   margin-top: 5px;
+}
+
+/* MODAL mobile */
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: auto;
+}
+
+.modal {
+  background: #252f89;
+  opacity: 0.95;
+  border: 1px solid #fff;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  margin: 24px;
+  padding: 24px;
+  z-index: 2;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.modal-title {
+  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.modal-btn-close {
+  background: none;
+  border: none;
+  color: #fff;
+}
+
+.modal-img {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-paragraph {
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  margin: 24px 0;
+}
+
+.modal-techs {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+.modal-techs > * {
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 10px;
+  border-right: 1px solid #81818c;
+  text-align: center;
+  align-self: center;
+}
+
+.modal-tech1 {
+  border-left: 1px solid #81818c;
+}
+
+.modal-btn {
+  cursor: pointer;
+  border: 0;
+  margin: 12px 0;
+  padding: 12px;
+  background: #7d73fc;
+  color: #edecff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.modal-btn:hover {
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+}
+
+.modal-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.modal-btn span {
+  margin: 0 12px;
 }
 
 /* -------------------------------------- */
@@ -789,5 +899,39 @@ hr {
     z-index: -1;
     filter: blur(50px);
     transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
+  }
+
+  /* MODAL DESKTOP */
+  .modal {
+    max-width: 1000px;
+    margin: 2% auto;
+  }
+
+  .modal-title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 32px;
+  }
+
+  .modal-paragraph {
+    max-width: 684px;
+    margin: 24px auto;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .modal-techs > * {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .modal-buttons {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-buttons > * {
+    margin: 24px 24px;
   }
 }

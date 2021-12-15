@@ -1,233 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="styles.css">
-  <title>My Portfolio</title>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJ1PLTDR6M"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Portfolio</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-WJ1PLTDR6M"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-    gtag('config', 'G-WJ1PLTDR6M');
-  </script>
-</head>
-<body>
-  <div class="circle1 show"></div>
-  <div class="circle2 show"></div>
-  <div class="oval1"></div>
-  <div class="oval2"></div>
-  <div class="oval3"></div>
-  <div class="oval4"></div>
-  <div class="container">
+      gtag('config', 'G-WJ1PLTDR6M');
+    </script>
+  </head>
+  <body>
+    <div class="circle1 show"></div>
+    <div class="circle2 show"></div>
+    <div class="oval1"></div>
+    <div class="oval2"></div>
+    <div class="oval3"></div>
+    <div class="oval4"></div>
+    <div class="container">
       <!-- HEADER AND NAVBAR SECTION  -->
-    <header id="header" class="header">
-      <a href="#" id="logo" class="logo">My Logo</a>
-      <nav id="nav-flex" class="nav-flex">
-        <a class="left-icon"><i class="fas fa-times hide"></i></a>
-        <a href="#portfolio" class="nav-portfolio">Portfolio<i class="fas fa-chevron-right"></i></a>
-        <a href="#contact" class="nav-contact">Contact<i class="fas fa-chevron-right"></i></a>
-        <a href="#about" class="nav-about">About<i class="fas fa-chevron-right"></i></a>
-        <a href="#email"><i class="far fa-envelope show"></i></a>
-      </nav>
-      <div id="hamburger" class="nav-hamburger">
-        <div class="hamburger"></div>
-        <div class="hamburger"></div>
-        <div class="hamburger"></div>
+      <header id="header" class="header">
+        <a href="#" id="logo" class="logo">My Logo</a>
+        <nav id="nav-flex" class="nav-flex">
+          <a class="left-icon"><i class="fas fa-times hide"></i></a>
+          <a href="#portfolio" class="nav-portfolio"
+            >Portfolio<i class="fas fa-chevron-right"></i
+          ></a>
+          <a href="#contact" class="nav-contact"
+            >Contact<i class="fas fa-chevron-right"></i
+          ></a>
+          <a href="#about" class="nav-about"
+            >About<i class="fas fa-chevron-right"></i
+          ></a>
+          <a href="#email"><i class="far fa-envelope show"></i></a>
+        </nav>
+        <div id="hamburger" class="nav-hamburger">
+          <div class="hamburger"></div>
+          <div class="hamburger"></div>
+          <div class="hamburger"></div>
+        </div>
+      </header>
+      <!-- HEADLINE SECTION  -->
+      <section id="about" class="headline">
+        <h1>Nuri Lacka</h1>
+        <h2>Software Developer</h2>
+        <p>
+          I can help you build a product, feature or website Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don't hesitate to contact me.
+        </p>
+      </section>
+      <div class="divider1">
+        <hr />
       </div>
-    </header>
-    <!-- HEADLINE SECTION  -->
-    <section id="about" class="headline">
-      <h1>Nuri Lacka</h1>
-      <h2>Software Developer</h2>
-      <p>
-        I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.
-      </p>
-    </section>
-    <div class="divider1">
-      <hr/>
+      <!-- LANGUAGES , FRAMEWORKS AND SKILLS SECTION  -->
+      <section class="languages">
+        <div class="languages-iner">
+          <ul>
+            <li><h3>Language</h3></li>
+            <li>Javascript</li>
+            <li>Ruby</li>
+            <li>Html</li>
+            <li>Css</li>
+          </ul>
+          <ul>
+            <li><h3>Frameworks</h3></li>
+            <li>Bootstrap</li>
+            <li>Ruby on Rails</li>
+            <li>RSpec</li>
+            <li>Capybara</li>
+            <li>Selenium</li>
+          </ul>
+          <ul>
+            <li><h3>Skills</h3></li>
+            <li>Codekit</li>
+            <li>Github</li>
+            <li>Codepen</li>
+            <li>Gitlab</li>
+            <li>Terminal</li>
+          </ul>
+        </div>
+      </section>
+      <div class="divider1">
+        <hr />
+      </div>
+      <!-- LANGUAGES , FRAMEWORKS AND SKILLS SECTION  -->
+      <section class="icons">
+        <div class="icons-iner">
+          <div class="work-icon icon-hide">
+            Work<i class="fas fa-arrow-down"></i>
+          </div>
+          <div class="social">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-angellist"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-medium-m"></i></a>
+          </div>
+          <div class="work-icon"><i class="fas fa-arrow-down"></i>Work</div>
+        </div>
+      </section>
+      <!-- WORK SECTION  -->
+      <section id="portfolio" class="work">
+        <div class="work-iner">
+          <h1 class="work-title">My recent work</h1>
+          <hr />
+          <div id="cards-render"></div>
+        </div>
+      </section>
+      <!-- CONTACT SECTION  -->
+      <section id="contact" class="contact">
+        <ul class="contact-iner">
+          <li>
+            <h2 class="contact-title">Let's chat!</h2>
+          </li>
+          <li>
+            <p class="contact-paragraph">
+              If you have an application you are interested in developing, a
+              feature that you need built or a project that needs coding. I’d
+              love to help with it
+            </p>
+          </li>
+          <li>
+            <form
+              action="https://formspree.io/f/xqknzyyj"
+              method="POST"
+              class="message-form"
+            >
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                maxlength="30"
+                required
+                class="form-control input1"
+              />
+              <input
+                type="text"
+                name="lastname"
+                placeholder="Last Name"
+                maxlength="30"
+                required
+                class="form-control input2"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                maxlength="30"
+                required
+                class="form-control input3"
+              />
+              <textarea
+                name="message"
+                placeholder="Enter message!"
+                rows="5"
+                maxlength="500"
+                required
+                class="form-control input4"
+              ></textarea>
+              <button type="submit" class="button-contact input5">Send</button>
+            </form>
+          </li>
+        </ul>
+      </section>
     </div>
-    <!-- LANGUAGES , FRAMEWORKS AND SKILLS SECTION  -->
-    <section class="languages">
-      <div class="languages-iner">
-        <ul>
-          <li><h3>Language</h3></li>
-          <li>Javascript</li>
-          <li>Ruby</li>
-          <li>Html</li>
-          <li>Css</li>
-        </ul>
-        <ul>
-          <li><h3>Frameworks</h3></li>
-          <li>Bootstrap</li>
-          <li>Ruby on Rails</li>
-          <li>RSpec</li>
-          <li>Capybara</li>
-          <li>Selenium</li>
-        </ul>
-        <ul>
-          <li><h3>Skills</h3></li>
-          <li>Codekit</li>
-          <li>Github</li>
-          <li>Codepen</li>
-          <li>Gitlab</li>
-          <li>Terminal</li>
-        </ul>
-      </div>
-    </section>
-    <div class="divider1">
-      <hr/>
+    <div class="bottom-divider">
+      <hr />
     </div>
-    <!-- LANGUAGES , FRAMEWORKS AND SKILLS SECTION  -->
-    <section class="icons">
-      <div class="icons-iner">
-        <div class="work-icon icon-hide">
-          Work<i class="fas fa-arrow-down"></i>
-        </div>
-        <div class="social">
-          <a href="#" ><i class="fab fa-github"></i></a>
-          <a href="#" ><i class="fab fa-linkedin"></i></a>
-          <a href="#" ><i class="fab fa-angellist"></i></a>
-          <a href="#" ><i class="fab fa-twitter"></i></a>
-          <a href="#" ><i class="fab fa-medium-m"></i></a>
-        </div>
-        <div class="work-icon">
-          <i class="fas fa-arrow-down"></i>Work
-        </div>
-      </div>
-    </section>
-    <!-- WORK SECTION  -->
-    <section id="portfolio" class="work">
-      <div class="work-iner">
-        <h1 class="work-title">My recent work</h1>
-        <hr/>
-        <div class="card">
-          <div class="card-image">
-            <img src="images/app_sceenshot.jpg" alt="mypage" />
-          </div>
-          <div class="card-text">
-            <h3 class="card-header">Multi-Post stories</h3>
-            <p class="card-paragraph">
-              A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-            </p>
-            <ul class="techs">
-              <li class="tech1">css</li>
-              <li class="tech2">html</li>
-              <li class="tech3">bootsrap</li>
-              <li class="tech4">ruby</li>
-            </ul>
-            <div>
-              <button type="button" class="btn-card">See Project</button>
-            </div>
-          </div>
-        </div>
-        <div class="card card-reverse">
-          <div class="card-image">
-            <img src="images/app_sceenshot.jpg" alt="mypage" />
-          </div>
-          <div class="card-text">
-            <h3 class="card-header">Multi-Post stories</h3>
-            <p class="card-paragraph">
-              A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-            </p>
-            <ul class="techs">
-              <li class="tech1">css</li>
-              <li class="tech2">html</li>
-              <li class="tech3">bootsrap</li>
-              <li class="tech4">ruby</li>
-            </ul>
-            <div>
-              <button type="button" class="btn-card">See Project</button>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-image">
-            <img src="images/app_sceenshot.jpg" alt="mypage" />
-          </div>
-          <div class="card-text">
-            <h3 class="card-header">Multi-Post stories</h3>
-            <p class="card-paragraph">
-              A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-            </p>
-            <ul class="techs">
-              <li class="tech1">css</li>
-              <li class="tech2">html</li>
-              <li class="tech3">bootsrap</li>
-              <li class="tech4">ruby</li>
-            </ul>
-            <div>
-              <button type="button" class="btn-card">See Project</button>
-            </div>
-          </div>
-        </div>
-        <div class="card card-reverse">
-          <div class="card-image">
-            <img src="images/app_sceenshot.jpg" alt="mypage" />
-          </div>
-          <div class="card-text">
-            <h3 class="card-header">Multi-Post stories</h3>
-            <p class="card-paragraph">
-              A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-            </p>
-            <ul class="techs">
-              <li class="tech1">css</li>
-              <li class="tech2">html</li>
-              <li class="tech3">bootsrap</li>
-              <li class="tech4">ruby</li>
-            </ul>
-            <div>
-              <button type="button" class="btn-card">See Project</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- CONTACT SECTION  -->
-    <section id="contact" class="contact">
-      <ul class="contact-iner">
-        <li>
-          <h2 class="contact-title">Let's chat!</h2>
-        </li>
-        <li>
-          <p class="contact-paragraph">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-        </li>
-        <li>
-          <form action="https://formspree.io/f/xqknzyyj" method="POST" class="message-form">
-            <input type="text" name="name" placeholder="Name" maxlength="30" required class="form-control input1 ">
-            <input type="text" name="lastname" placeholder="Last Name" maxlength="30" required class="form-control input2 ">
-            <input type="email" name="email" placeholder="Email" maxlength="30" required class="form-control input3">
-            <textarea name="message" placeholder="Enter message!" rows="5" maxlength="500" required class="form-control input4" ></textarea>
-            <button type="submit" class="button-contact input5">Send</button>
-          </form>
-        </li>
-      </ul>
-    </section>
-  </div>
-  <div class="bottom-divider">
-    <hr/>
-  </div>
-  <div class="container">
-    <!-- FOOTER SECTION  -->
-    <footer class="bottom-nav">
-      <ul class="social">
-        <li><a href="#" ><i class="fab fa-github"></i></a></li>
-        <li><a href="#" ><i class="fab fa-linkedin"></i></a></li>
-        <li><a href="#" ><i class="fab fa-angellist"></i></a></li>
-        <li><a href="#" ><i class="fab fa-twitter"></i></a></li>
-        <li><a href="#" ><i class="fab fa-medium-m"></i></a></li>
-      </ul>
-      <h3 id="email" class="email-title">nurilacka@gmail.com</h3>
-    </footer>
-  </div>
+    <div class="container">
+      <!-- FOOTER SECTION  -->
+      <footer class="bottom-nav">
+        <ul class="social">
+          <li>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-angellist"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-medium-m"></i></a>
+          </li>
+        </ul>
+        <h3 id="email" class="email-title">nurilacka@gmail.com</h3>
+      </footer>
+    </div>
 
-  <script src="main.js">
-    
-  </script>
-</body>
+    <div class="modal-container hide">
+      <div class="modal">
+        <div class="modal-header">
+          <h2 class="modal-title">Multipost stories</h2>
+          <button type="button" class="modal-btn-close"><i class="fas fa-times"></i></button>
+        </div>
+        <img
+          class="modal-img"
+          src="/images/Portfolio1.png"
+          alt="project image"
+        />
+        <p class="modal-paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+          voluptate earum consequatur vitae delectus voluptatibus, nam labore et
+          modi ipsum incidunt a provident placeat aspernatur, at quasi ad fugit
+          natus. Cupiditate adipisci pariatur molestiae vero perferendis tenetur
+          quos laudantium animi nisi veniam omnis, cum quaerat ut. Maxime
+          voluptates ipsam deserunt.
+        </p>
+        <ul class="modal-techs">
+        </ul>
+        <div class="modal-buttons">
+          <a href="#" class="modal-btn modal-live" target="_blank">
+            <span>See live</span>
+            <img src="/images/live.png" height="20" alt="" />
+          </a>
+          <a href="#" class="modal-btn modal-source" target="_blank">
+            <span>See source</span>
+            <img src="/images/github.png" height="20" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
 </html>
