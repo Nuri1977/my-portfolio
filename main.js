@@ -64,39 +64,43 @@ const projects = [
   {
     id: 1,
     name: 'Figma project 1',
-    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque dolorum excepturi tempora suscipit velit asperiores est explicabo non cumque reprehenderit consectetur ut, minus nihil sed incidunt possimus quas deleniti maiores, tempore magnam rerum nulla fugiat.',
+    description:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque dolorum excepturi tempora suscipit velit asperiores est explicabo non cumque reprehenderit consectetur ut, minus nihil sed incidunt possimus quas deleniti maiores, tempore magnam rerum nulla fugiat.',
     imageUrl: '/images/app_sceenshot.jpg',
-    technologies: ["html", "Ruby on rails", "Javascript"],
+    technologies: ['html', 'Ruby on rails', 'Javascript'],
     liveLink: 'http://nuri1977.github.io/bootsrap5-figma-01/',
-    sourceLink: 'https://github.com/Nuri1977/bootsrap5-figma-01'
+    sourceLink: 'https://github.com/Nuri1977/bootsrap5-figma-01',
   },
   {
     id: 2,
     name: 'Figma project 2',
-    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque dolorum excepturi tempora suscipit velit asperiores est explicabo non cumque reprehenderit consectetur ut, minus nihil sed incidunt possimus quas deleniti maiores, tempore magnam rerum nulla fugiat.',
+    description:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque dolorum excepturi tempora suscipit velit asperiores est explicabo non cumque reprehenderit consectetur ut, minus nihil sed incidunt possimus quas deleniti maiores, tempore magnam rerum nulla fugiat.',
     imageUrl: '/images/app_sceenshot.jpg',
-    technologies: ["html", "Ruby on rails", "Javascript"],
+    technologies: ['html', 'Ruby on rails', 'Javascript'],
     liveLink: 'livelink2',
-    sourceLink: 'sourcelink2'
+    sourceLink: 'sourcelink2',
   },
   {
     id: 3,
     name: 'Figma project 3',
-    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque dolorum excepturi tempora suscipit velit asperiores est explicabo non cumque reprehenderit consectetur ut, minus nihil sed incidunt possimus quas deleniti maiores, tempore magnam rerum nulla fugiat.',
+    description:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque dolorum excepturi tempora suscipit velit asperiores est explicabo non cumque reprehenderit consectetur ut, minus nihil sed incidunt possimus quas deleniti maiores, tempore magnam rerum nulla fugiat.',
     imageUrl: '/images/app_sceenshot.jpg',
-    technologies: ["html", "Ruby on rails", "Javascript"],
+    technologies: ['html', 'Ruby on rails', 'Javascript'],
     liveLink: 'livelink3',
-    sourceLink: 'sourcelink3'
+    sourceLink: 'sourcelink3',
   },
   {
     id: 4,
     name: 'Figma project 4',
-    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque dolorum excepturi tempora suscipit velit asperiores est explicabo non cumque reprehenderit consectetur ut, minus nihil sed incidunt possimus quas deleniti maiores, tempore magnam rerum nulla fugiat.',
+    description:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque dolorum excepturi tempora suscipit velit asperiores est explicabo non cumque reprehenderit consectetur ut, minus nihil sed incidunt possimus quas deleniti maiores, tempore magnam rerum nulla fugiat.',
     imageUrl: '/images/app_sceenshot.jpg',
-    technologies: ["html", "Ruby on rails", "Javascript"],
+    technologies: ['html', 'Ruby on rails', 'Javascript'],
     liveLink: 'livelink4',
-    sourceLink: 'sourcelink4'
-  }
+    sourceLink: 'sourcelink4',
+  },
 ];
 
 /* -------------------------------------------------- */
@@ -111,7 +115,8 @@ const rendeCards = () => {
     cardObject = projects[i];
     let btnModal = '';
     let cardReverse = '';
-    if (cardObject.id === 2 || cardObject.id === 4) cardReverse = 'card-reverse';
+    if (cardObject.id === 2 || cardObject.id === 4)
+      cardReverse = 'card-reverse';
     btnModal = 'btnP' + cardObject.id;
     const content = `
       <div class="card  ${cardReverse}">
@@ -137,7 +142,6 @@ const rendeCards = () => {
 
     cardContent.innerHTML += content;
   }
-
 };
 
 rendeCards();
@@ -163,7 +167,7 @@ const modalSource = document.querySelector('.modal-source');
 let modalProject = {};
 
 const fetchData = (event) => {
-  for (let i = 0; i < projects.length; i = i+1) {
+  for (let i = 0; i < projects.length; i = i + 1) {
     if (event.target.value == projects[i].id) {
       modalProject = projects[i];
     }
@@ -185,5 +189,6 @@ projectBtn2.addEventListener('click', fetchData);
 projectBtn3.addEventListener('click', fetchData);
 projectBtn4.addEventListener('click', fetchData);
 
-modalClose.addEventListener('click', () => modalContainer.classList.replace('show', 'hide'));
-
+modalClose.addEventListener('click', () =>
+  modalContainer.classList.replace('show', 'hide')
+);
