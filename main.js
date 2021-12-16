@@ -115,8 +115,7 @@ const rendeCards = () => {
     cardObject = projects[i];
     let btnModal = '';
     let cardReverse = '';
-    if (cardObject.id === 2 || cardObject.id === 4)
-      cardReverse = 'card-reverse';
+    if (cardObject.id === 2 || cardObject.id === 4) cardReverse = 'card-reverse';
     btnModal = `btnP${cardObject.id}`;
     const content = `
       <div class="card  ${cardReverse}">
@@ -192,9 +191,7 @@ projectBtn2.addEventListener('click', fetchData);
 projectBtn3.addEventListener('click', fetchData);
 projectBtn4.addEventListener('click', fetchData);
 
-modalClose.addEventListener('click', () =>
-  modalContainer.classList.replace('show', 'hide')
-);
+modalClose.addEventListener('click', () => modalContainer.classList.replace('show', 'hide'));
 
 /* -------------------------------------------------- */
 /*                  FORM VALIDATION  PRACTICE         */
@@ -210,18 +207,12 @@ const emailRegex = /[A-Z]/;
 function toastMsg() {
   const x = document.getElementById('snackbar');
   x.className = 'show1';
-  setTimeout(() => {
-    x.className = x.className.replace('show1', '');
-  }, 10000);
+  setTimeout(() => { x.className = x.className.replace('show1', ''); }, 10000);
 }
 
 contactForm.addEventListener('submit', (event) => {
   event.preventDefault();
-  if (emailRegex.test(email.value) === true) {
-    toastMsg();
-  } else {
-    contactForm.submit();
-  }
+  if (emailRegex.test(email.value) === true) { toastMsg(); } else { contactForm.submit(); }
 });
 
 /* -------------------------------------------------- */
@@ -229,7 +220,7 @@ contactForm.addEventListener('submit', (event) => {
 /* -------------------------------------------------- */
 let formData = {};
 let formJson = '';
-const storedForm = localStorage.getItem('lsForm');
+const localContact = localStorage.getItem('lsForm');
 
 const updateForm = () => {
   formData = {
@@ -240,38 +231,29 @@ const updateForm = () => {
   };
 };
 
-firstName.addEventListener('onchange', (e) => {
-  formData.firstName = e.target.value;
-});
-lastName.addEventListener('onchange', (e) => {
-  formData.lastName = e.target.value;
-});
-email.addEventListener('onchange', (e) => {
-  formData.email = e.target.value;
-});
-userMsg.addEventListener('onchange', (e) => {
-  formData.userMsg = e.target.value;
-});
+firstName.addEventListener('onchange', (e) => { formData.firstName = e.target.value; });
+lastName.addEventListener('onchange', (e) => { formData.lastName = e.target.value; });
+email.addEventListener('onchange', (e) => { formData.email = e.target.value; });
+userMsg.addEventListener('onchange', (e) => { formData.userMsg = e.target.value; });
 
-const getForm = () => {
+const setForm = () => {
   updateForm();
   formJson = JSON.stringify(formData);
   localStorage.setItem('lsForm', formJson);
 };
 
-const setForm = () => {
-  const holdForm = JSON.parse(storedForm);
-  firstName.value = holdForm.firstName;
-  lastName.value = holdForm.lastName;
-  email.value = holdForm.email;
-  userMsg.value = holdForm.userMsg;
+contactForm.addEventListener('keyup', () => {
+  setForm();
+});
+
+const setData = () => {
+  if (localContact) {
+    const formHolder = JSON.parse(localContact);
+    firstName.value = formHolder.firstName;
+    lastName.value = formHolder.lastName;
+    email.value = formHolder.email;
+    userMsg.value = formHolder.userMsg;
+  }
 };
 
-setForm();
-if (storedForm) {
-  setForm();
-}
-
-contactForm.addEventListener('keyup', () => {
-  getForm();
-});
+setData();
