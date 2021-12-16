@@ -192,3 +192,38 @@ projectBtn3.addEventListener('click', fetchData);
 projectBtn4.addEventListener('click', fetchData);
 
 modalClose.addEventListener('click', () => modalContainer.classList.replace('show', 'hide'));
+
+/* -------------------------------------------------- */
+/*                  FORM VALIDATION  PRACTICE         */
+/* -------------------------------------------------- */
+
+const contactForm = document.getElementById('contact-form');
+const email = document.getElementById('email');
+
+const emailValue = email.value;
+const emailRegex = /[A-Z]/;
+
+contactForm.addEventListener("submit", function (event) {
+	// stop form submission
+	event.preventDefault();
+
+	// validate the email uppercase on the form
+  if (emailRegex.test(email.value) === true) {
+    // if invalid, show error message
+    toastMsg();
+  }
+  else {
+  // if valid, submit the form
+    contactForm.submit();
+  };
+
+});
+
+function toastMsg() {
+  var x = document.getElementById("snackbar");
+  x.className = "show1";
+  setTimeout(function(){ x.className = x.className.replace("show1", ""); }, 10000);
+}
+
+
+

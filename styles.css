@@ -485,6 +485,21 @@ hr {
   margin-bottom: 10px;
 }
 
+#snackbar {
+  padding: 10px;
+  display: none;
+  background-color: #7d73fc;
+  color: red;
+  text-align: center;
+  font-size: 17px;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+}
+
+#snackbar.show1 {
+  display: block;
+}
+
+
 /* Bottom navigation */
 .bottom-nav {
   display: flex;
@@ -797,6 +812,10 @@ hr {
     line-height: 24px;
     width: 136px;
     margin: 90px 24px 50px 24px;
+  }
+
+  #snackbar {
+    margin: 10px 0;
   }
 
   /* Bottom navigation - DESKTOP */
