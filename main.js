@@ -192,3 +192,22 @@ projectBtn3.addEventListener('click', fetchData);
 projectBtn4.addEventListener('click', fetchData);
 
 modalClose.addEventListener('click', () => modalContainer.classList.replace('show', 'hide'));
+
+/* -------------------------------------------------- */
+/*                  FORM VALIDATION  PRACTICE         */
+/* -------------------------------------------------- */
+
+const contactForm = document.getElementById('contact-form');
+const email = document.getElementById('contact-email');
+const emailRegex = /[A-Z]/;
+
+function toastMsg() {
+  const x = document.getElementById('snackbar');
+  x.className = 'show1';
+  setTimeout(() => { x.className = x.className.replace('show1', ''); }, 10000);
+}
+
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (emailRegex.test(email.value) === true) { toastMsg(); } else { contactForm.submit(); }
+});
