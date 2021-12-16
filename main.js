@@ -246,7 +246,7 @@ contactForm.addEventListener('keyup', () => {
   setForm();
 });
 
-const setData = () => {
+const getData = () => {
   if (localContact) {
     const formHolder = JSON.parse(localContact);
     firstName.value = formHolder.firstName;
@@ -256,4 +256,4 @@ const setData = () => {
   }
 };
 
-setData();
+getData();
