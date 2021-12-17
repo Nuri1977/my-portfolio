@@ -198,7 +198,10 @@ modalClose.addEventListener('click', () => modalContainer.classList.replace('sho
 /* -------------------------------------------------- */
 
 const contactForm = document.getElementById('contact-form');
+const firstName = document.getElementById('name');
+const lastName = document.getElementById('last-name');
 const email = document.getElementById('contact-email');
+const userMsg = document.getElementById('message');
 const emailRegex = /[A-Z]/;
 
 function toastMsg() {
@@ -211,3 +214,46 @@ contactForm.addEventListener('submit', (event) => {
   event.preventDefault();
   if (emailRegex.test(email.value) === true) { toastMsg(); } else { contactForm.submit(); }
 });
+
+/* -------------------------------------------------- */
+/*                  LOCAL STORAGE                     */
+/* -------------------------------------------------- */
+let formData = {};
+let formJson = '';
+const localContact = localStorage.getItem('lsForm');
+
+const updateForm = () => {
+  formData = {
+    firstName: firstName.value,
+    lastName: lastName.value,
+    email: email.value,
+    userMsg: userMsg.value,
+  };
+};
+
+firstName.addEventListener('onchange', (e) => { formData.firstName = e.target.value; });
+lastName.addEventListener('onchange', (e) => { formData.lastName = e.target.value; });
+email.addEventListener('onchange', (e) => { formData.email = e.target.value; });
+userMsg.addEventListener('onchange', (e) => { formData.userMsg = e.target.value; });
+
+const setForm = () => {
+  updateForm();
+  formJson = JSON.stringify(formData);
+  localStorage.setItem('lsForm', formJson);
+};
+
+contactForm.addEventListener('keyup', () => {
+  setForm();
+});
+
+const getData = () => {
+  if (localContact) {
+    const formHolder = JSON.parse(localContact);
+    firstName.value = formHolder.firstName;
+    lastName.value = formHolder.lastName;
+    email.value = formHolder.email;
+    userMsg.value = formHolder.userMsg;
+  }
+};
+
+getData();
